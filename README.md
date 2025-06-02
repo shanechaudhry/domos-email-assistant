@@ -35,6 +35,12 @@ EMAIL_PASSWORD=your_gmail_app_password
 TOGETHER_API_KEY=your_together_ai_key
 ```
 
+Note: You must supply your own Together.ai API key in the `.env` file to enable LLM-based reply and triage generation.
+You can create an account at https://api.together.ai/
+
+If no valid key is provided or the API fails, the system will automatically fall back to rule-based logic to ensure a reply is still generated.
+
+
 3. Configure your test Gmail account:
 - Enable IMAP access
 - Enable 2FA
